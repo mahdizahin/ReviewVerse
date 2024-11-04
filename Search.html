@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReviewVerse - Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    label {
+      font-size: 14px;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+    select, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Search in ReviewVerse</h2>
+
+    <!-- Category Selection -->
+    <label for="category">Please select a category for better search:</label>
+    <select id="category">
+      <option value="" disabled selected>Select a category</option>
+      <option value="teacher">Teacher</option>
+      <option value="university">University</option>
+      <option value="beauty">Beauty</option>
+      <option value="gadgets">Gadgets</option>
+    </select>
+
+    <!-- Search Bar -->
+    <label for="search-bar">Please write full name:</label>
+    <input type="text" id="search-bar" placeholder="Type here...">
+
+    <!-- Search Button -->
+    <button class="btn" onclick="search()">Search</button>
+  </div>
+
+  <script>
+    function search() {
+      const category = document.getElementById("category").value;
+      const searchQuery = document.getElementById("search-bar").value.trim();
+
+      if (!category) {
+        alert("Please select a category.");
+        return;
+      }
+
+      if (!searchQuery) {
+        alert("Please enter a full name for the search.");
+        return;
+      }
+
+      alert(`Searching for "${searchQuery}" in category "${category}"...`);
+      
+      // Add functionality here to perform the search in the application.
+    }
+  </script>
+</body>
+</html>
