@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f7f7f7;
+  }
+  
+  .header-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+  
+  .time {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .icons i {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  .profile-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .profile-header h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .profile-stats span {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  
+  .profile-actions button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .impact-section, .recently-viewed-section, .contributions-section, .activity-section, .account-section {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+  }
+  
+  .impact-section h3, .recently-viewed-section h3, .contributions-section h3, .activity-section h3, .account-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .tabs span {
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .impact-stats {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .stat p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .stat span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .write-review-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e74c3c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .recently-viewed-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .recently-viewed-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .bookmark-icon {
+    margin-left: auto;
+    font-size: 20px;
+  }
+  
+  .contribution-item, .activity-item, .account-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .bottom-nav span {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .bottom-nav .active {
+    color: #e74c3c;
+  }
+  
